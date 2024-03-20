@@ -1,0 +1,257 @@
+/* 
+    CSD-460
+    Team Indigo
+    Moffat Bay Marina
+    
+    Team Members
+        Sam Crandall
+        Jacob Ives
+        Jeff Pedersen
+        Micah Smith 
+
+    Contributors to this Code
+        Jeff Pedersen (last update on 9-19-2023)
+*/
+
+/* summary page content styling */
+
+/* padding for reservation data */
+#reservationData {
+    margin: .5rem;
+}
+
+/* Mobile and small Tablet */
+@media screen and (min-width: 360px) and (max-width: 1000px) { 
+    /* hides the breadcrumbs on mobile and small tablets */
+    .breadcrumb {
+        display: none;
+    }
+
+    /* button styles */
+    .cancel-button,
+    .submit-button {      
+        background-color: #313b5b;
+        border: none;
+        border-radius: 1.5rem;
+        color: #dfded4;
+        cursor: pointer;
+        filter: drop-shadow(1px 4px 3px rgba(0, 0, 0, 0.5));
+        font-size: 26px;
+        height: 2.5rem;
+        margin-right: 1.5rem;
+        margin-top: 1rem;     
+        width: 27rem;
+    }
+
+    /* button hover styles */
+    .cancel-button:hover,
+    .submit-button:hover {
+        background-color: #5d8c98;
+        border: 1px solid #313b5b;
+        color:#26282f;  
+    }
+
+    /* positioning for the summary details container */
+    .details-container {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 20px;
+        text-align: center;  
+    }
+
+    /* header for the summary details container */
+    .details-container h4 {
+        filter: drop-shadow(1px 4px 3px rgba(0, 0, 0, 0.5));
+        text-align: center;  
+    }
+
+    /* footer styling */
+    footer {
+        bottom: 0;
+        position: fixed;
+        width: 100%;
+        z-index: 99;
+    }
+    
+    /* posistioning for form elements */
+    .form-group {
+        margin-bottom: .2rem;
+        text-align: left;
+    }
+  
+    /* content header */
+    h1 {
+        filter: drop-shadow(1px 4px 3px rgba(0, 0, 0, 0.5));
+        font-size: 26px;
+        margin-bottom: .5rem;
+        text-align: center;    
+    }
+
+
+
+    /* stacks the button on mobile and small tablets */
+    .stack {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;     
+    }
+
+    /* content container styling and positioning */
+    .summary-container {
+        background-color: #85a9cfaa;
+        border: 1px solid #313b5b; 
+        border-radius: 1.5rem;
+        filter: drop-shadow(1px 4px 3px rgba(0, 0, 0, 0.5));
+        height: 540px;
+        margin: 3rem auto;
+        padding-bottom: 2rem;
+        position: absolute;
+        right: 50%;
+        text-align: left;
+        top: 140px;
+        transform: translate(50%, 0);
+        width: 950px;
+        z-index: 98;   
+    }
+    
+    /* content paragraph styles */
+    .summary-container p {    
+        color: #26282f; 
+        filter: drop-shadow(1px 4px 3px rgba(0, 0, 0, 0.5));
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 1.5rem;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: .5rem;
+        text-align: center;
+        width:360px; 
+    }    
+
+    /* styling for the imported form details */
+    #summary-details {
+        background-color: #85a9cf;
+        border: 1px solid #26282f;
+        border-radius: 1.5rem;
+        filter: drop-shadow(1px 4px 3px rgba(0, 0, 0, 0.5));
+        font-size: 18px;
+        padding-left: 20px;
+    }
+
+    /* styling for the imported form details */
+    #summary-details > * {
+        display: block;
+        margin-right: 20px;
+    }
+} /* end Mobile and small Tablet */
+
+/* Large Tablet and Desktop */
+@media screen and (min-width: 1001px) {
+    /* button styles */
+    .cancel-button,
+    .submit-button {      
+        background-color: #313b5b;
+        border: none;
+        border-radius: 1.5rem;
+        color: #dfded4;
+        cursor: pointer;
+        filter: drop-shadow(1px 4px 3px rgba(0, 0, 0, 0.5));
+        font-size: 26px;
+        height: 2.5rem;
+        margin-right: 1.5rem;
+        margin-top: 1rem;
+        width: 27rem;
+    }
+
+    /* button hover styles */
+    .cancel-button:hover,
+    .submit-button:hover {
+        background-color: #5d8c98;
+        border: 1px solid #313b5b;
+        color:#26282f;  
+    }
+
+    /* positioning for the summary details container */
+    .details-container {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-bottom: 20px;
+        margin-right: 50px;
+        text-align: center;
+    }
+
+    /* header for the summary details container */
+    .details-container h4 {
+        filter: drop-shadow(1px 4px 3px rgba(0, 0, 0, 0.5));
+        text-align: center;
+    }
+
+    /* footer styling */
+    footer {
+        bottom: 0;
+        position: fixed;
+        width: 100%;
+        z-index: 99;
+    }  
+
+    /* content header */
+    h1 {
+        filter: drop-shadow(1px 4px 3px rgba(0, 0, 0, 0.5));
+        font-size: 26px;
+        margin-bottom: 1rem;
+        margin-right: 2.5rem;
+        text-align: center;  
+    }
+
+    /* content paragraph styles */
+    .summary-container p {
+        color: #26282f;
+        filter: drop-shadow(1px 4px 3px rgba(0, 0, 0, 0.5));
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: .5rem;
+        margin-right: 2.5rem;
+        margin-top: .5rem;
+        text-align: center;  
+    }
+
+    /* content container styling and positioning */
+    .summary-container {
+        background-color: #85a9cfaa;
+        border: 1px solid #313b5b;
+        border-radius: 1.5rem;
+        filter: drop-shadow(1px 4px 3px rgba(0, 0, 0, 0.5));
+        height: 370px;
+        margin: 3rem auto;
+        padding-bottom: 2rem;
+        padding-left: 2.7rem;
+        position: absolute;
+        right: 50%;
+        text-align: left;
+        top: 140px;
+        transform: translate(50%, 0);
+        width: 950px;
+        z-index: 98; 
+    }
+
+    /* styling for the imported form details */
+    #summary-details {
+        background-color: #85a9cf;
+        border: 1px solid #26282f; 
+        border-radius: 1.5rem;
+        filter: drop-shadow(1px 4px 3px rgba(0, 0, 0, 0.5));
+        font-size: 18px;
+        padding-left: 20px;
+    }
+   
+    /* styling for the imported form details */
+    #summary-details > * {
+        display: inline-block;
+        margin-right: 20px;
+    }
+} /* end Large Tablet and Desktop */
+/* end page content styling */

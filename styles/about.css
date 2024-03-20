@@ -1,0 +1,165 @@
+/* 
+    CSD-460
+    Team Indigo
+    Moffat Bay Marina
+    
+    Team Members
+        Sam Crandall
+        Jacob Ives
+        Jeff Pedersen
+        Micah Smith 
+
+    Contributors to this Code
+        Jeff Pedersen (last update on 9-11-2023)
+*/
+
+/* about page content styling */
+
+.about-container {
+    background-color: #85a9cfaa;
+    border: 1px solid #313b5b;  
+    border-radius: 1.5rem;
+    justify-content: space-between;
+    max-width: 75rem; 
+    z-index: 98;
+}
+
+.about-container,
+.content {
+    align-items: center;
+}
+
+.about-container,
+h1,
+h2,
+h3,
+label,
+p {
+    filter: drop-shadow(1px 4px 3px rgba(0, 0, 0, 0.5));
+}
+
+.about-group {
+    padding: 1.25rem;
+    margin-bottom: 3rem;
+}
+
+.content {
+    justify-content: center;
+    min-height: 100vh;
+    padding-bottom: 6vh;
+    padding-top: 12rem;
+}
+ 
+.contact-container {
+    flex: 1;
+    padding: 1.25rem;
+}
+
+.group-column,
+.group-section {
+    margin-bottom: 1.25rem;
+}
+
+h1 {
+    font-size: 1.75em;
+    margin-bottom: .5rem;
+}
+
+h1,
+.group-column,
+.group-section {
+    text-align: left;
+}
+
+h1,
+h2,
+h3 {
+	text-align:center;
+}
+
+h2 {
+    font-size: 1.625em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+label {
+    display: block;
+    font-size: 1.125em;
+    font-weight: bold; 
+    margin-left: 1rem;
+    margin-top: .5rem;
+}
+
+label,
+p {
+    color: #26282f;
+}
+
+p {
+    font-size: 1.25em;
+    margin-bottom: 1.5rem;
+    margin-top: .2rem;   
+}
+
+/* Mobile and Small Tablets */
+@media screen and (min-width: 360px) and (max-width: 1000px) {
+    .about-container {
+        height: 100rem;
+        text-align: center;
+        width: 100%;
+    }
+
+    .about-group {
+        flex: 5;
+    }
+
+    .breadcrumb {
+          display: none;
+    }
+
+    .contact-container {
+        flex: 1;
+        padding: 1.25rem;
+    }
+} /* end Mobile and Small Tablets */
+
+/* Large Tablet and Desktop */
+@media screen and (min-width: 1001px) {
+    .about-container {
+        flex-direction: column;
+        height: 73rem;
+        padding: 1.25rem;
+        width: 70%;
+    }
+
+    .about-container,
+    .content, 
+    .contact-about-group {
+        display: flex;
+    }
+
+    .about-group {
+        flex: 3;
+    }
+
+    .contact-about-group {     
+        gap: 1.25rem;
+        justify-content: space-between;
+    }
+
+    .contact-container {
+        align-self: flex-start;
+        margin-right: 6rem;
+        width: 5rem;
+    } 
+
+    .content-heading {
+        margin-bottom: 1.25rem;
+        text-align: center;
+        width: 100%;     
+    } 
+} /* end Large Tablet and Desktop */
+  /* end page content styling */

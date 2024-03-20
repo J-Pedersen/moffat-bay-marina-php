@@ -1,0 +1,486 @@
+/* 
+    CSD-460
+    Team Indigo
+    Moffat Bay Marina
+    
+    Team Members
+        Sam Crandall
+        Jacob Ives
+        Jeff Pedersen
+        Micah Smith 
+
+    Contributors to this Code
+        Jeff Pedersen (last update on 9-20-2023)
+*/
+
+/* waitlist page content styling */
+
+/* hides the breadcrumb on mobile and small tablets */
+@media screen and (min-width: 360px) and (max-width: 1000px) {
+  /* hides the breadcrumbs on mobile and small tablets */
+  .breadcrumb {
+      display: none;
+  }
+
+  /* content container styling and positioning */
+  .content {
+      align-items: center;
+      display: flex;
+      height: 590px;
+      justify-content: space-between;
+      margin-top: 210px; 
+  }
+
+  /* content container styling and positioning */
+  .details-container {
+      align-items: center;
+      display: flex;
+      height:100%;
+      margin-left: auto;
+      margin-right: auto;
+  }
+
+  /* footer styling */
+  footer {
+      margin-top: 4rem;
+      position: relative;
+      width: 100%;
+      z-index: 99;
+  }
+
+  /* form container styles */
+  .form-container {
+      display: flex;
+      flex-direction: column;
+      height: 200px;
+      width: 100%;
+      margin-left: 2rem;
+      margin-top: 2rem;
+  }
+
+  /* posistioning for form elements */
+  .form-group {
+      margin-bottom: .2rem;
+      text-align: left;
+  }
+
+  /* content container styling and positioning */
+  .form-group-container {
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 2rem;
+  }
+
+  /* content header */
+  h1 {
+      filter: drop-shadow(1px 4px 3px rgba(0, 0, 0, 0.5));
+      font-size: 26px;
+      margin-bottom: .5rem;
+      margin-right: 2rem;
+      text-align: center;
+  }
+
+  /* form label styles */
+  label {
+      color:#26282f;
+      display: block;  
+      filter: drop-shadow(1px 4px 3px rgba(0, 0, 0, 0.5));
+      font-size: 18px;
+      font-weight: bold;
+      margin-left: 1rem;
+      margin-top: .5rem;
+  }
+
+  /* content container styling and positioning */
+  .waitlist-container {
+      background-color: #85a9cfaa;
+      border: 1px solid #313b5b;
+      border-radius: 1.5rem;
+      display: flex;
+      filter: drop-shadow(1px 4px 3px rgba(0, 0, 0, 0.5));
+      height: 620px;
+      justify-content: center;
+      margin: 2rem auto;
+      padding-bottom: 1rem;
+      text-align: left;
+      width: 430px;
+      z-index: 98;
+  } 
+
+  /* styling for the waitlist-details */
+  #waitlist-details {    
+      background-color: #85a9cf;
+      border: 1px solid #26282f;
+      border-radius: 1.5rem;
+      filter: drop-shadow(1px 4px 3px rgba(0, 0, 0, 0.5));
+      font-size: 18px;
+      margin: 2rem;
+      padding: .5rem;
+      width: 24rem;
+      text-align: center;
+  }
+
+  /* styling for the imported form details */
+  #waitlist-details > * {
+      margin-right: 20px;
+  }
+
+  /* waitlist lookup form */
+  #waitlist-form {
+      display: flex;
+      text-align: center;
+      width: 90%;
+  }
+
+  .waitlist-group {
+      display: flex;
+      flex-direction: column;
+  }
+
+  /* button styles */
+  .submit-button {
+      background-color: #313b5b;
+      border: none;
+      border-radius: 1.5rem;
+      color: #dfded4;
+      cursor: pointer;
+      filter: drop-shadow(1px 4px 3px rgba(0, 0, 0, 0.5));
+      font-size: 26px;
+      height: 2.6rem;
+      margin-top: 1rem;
+      width: 25rem;
+  }
+
+  /* button hover styles */    
+  .submit-button:hover {
+      background-color: #5d8c98;
+      border: 1px solid #313b5b;
+      color:#26282f;  
+  }    
+  
+  /* textbox styles */
+  .text-field {
+      background-color: #dfded4;
+      border: 1px solid #313b5b;
+      border-radius: 1.5rem;
+      cursor: pointer;
+      filter: drop-shadow(1px 4px 3px rgba(0, 0, 0, 0.5));
+      font-size: 20px;
+      margin-bottom: .5rem;
+      padding: .5rem;
+      width: 24rem;
+  }
+}
+
+/* Tablet (Mobile Logo) */
+@media screen and (min-width: 600px) and (max-width: 900px) {
+  /* hides the breadcrumbs on mobile and small tablets */
+  .breadcrumb {
+      display: none;
+  }
+
+  /* content container styling and positioning */
+  .content {
+      align-items: center;
+      display: flex;
+      height: 590px;
+      justify-content: space-between;
+      margin-top: 210px;
+  }
+
+  /* content container styling and positioning */
+  .details-container {
+      align-items: center;
+      display: flex;
+      height:100%;
+      margin-left: auto;
+      margin-right: auto;
+  }
+
+  /* footer styling */
+  footer {
+      margin-top: 4rem;;
+      position: relative;
+      width: 100%;
+      z-index: 99;
+  }
+
+  /* form container styles */
+  .form-container {
+      display: flex;
+      flex-direction: column;
+      height: 200px;
+      width: 100%;
+      margin-top: 2rem;
+      margin-left: 2rem;
+  }
+
+  /* posistioning for form elements */
+  .form-group {
+      margin-bottom: .2rem;
+      text-align: left;
+  }
+
+  /* content container styling and positioning */
+  .form-group-container {
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 2rem;
+  }
+
+  /* content header */
+  h1 {
+      filter: drop-shadow(1px 4px 3px rgba(0, 0, 0, 0.5));
+      font-size: 26px;
+      margin-bottom: .5rem;
+      margin-right: 2rem;
+      text-align: center;
+  }
+
+  /* form label styles */
+  label {
+      color:#26282f;
+      display: block;  
+      filter: drop-shadow(1px 4px 3px rgba(0, 0, 0, 0.5));
+      font-size: 18px;
+      font-weight: bold;
+      margin-left: 1rem;
+      margin-top: .5rem;
+  }
+
+  /* content container styling and positioning */
+  .waitlist-container {
+      background-color: #85a9cfaa;
+      border: 1px solid #313b5b;
+      border-radius: 1.5rem;
+      display: flex;
+      filter: drop-shadow(1px 4px 3px rgba(0, 0, 0, 0.5));
+      height: 620px;
+      justify-content: center;
+      margin: 2rem auto;
+      padding-bottom: 1rem;
+      text-align: left;
+      width: 530px;
+      z-index: 98;
+  } 
+
+  /* styling for the waitlist-details */
+  #waitlist-details {    
+      background-color: #85a9cf;
+      border: 1px solid #26282f;
+      border-radius: 1.5rem;
+      filter: drop-shadow(1px 4px 3px rgba(0, 0, 0, 0.5));
+      font-size: 18px;
+      margin: 2rem;
+      padding: .5rem;
+      width: 24rem;
+      text-align: center;
+  }
+
+  /* styling for the imported form details */
+  #waitlist-details > * {
+      margin-right: 20px;
+  }
+
+  /* waitlist lookup form */
+  #waitlist-form {
+      display: flex;
+      text-align: center;
+      width: 90%;
+  }
+
+  .waitlist-group {
+      display: flex;
+      flex-direction: column;
+  }
+
+  /* button styles */
+  .submit-button {
+      background-color: #313b5b;
+      border: none;
+      border-radius: 1.5rem;
+      color: #dfded4;
+      cursor: pointer;
+      filter: drop-shadow(1px 4px 3px rgba(0, 0, 0, 0.5));
+      font-size: 26px;
+      height: 2.6rem;
+      margin-top: 1rem;
+      width: 25rem;
+  }
+
+  /* button hover styles */    
+  .submit-button:hover {
+      background-color: #5d8c98;
+      border: 1px solid #313b5b;
+      color:#26282f;  
+  }    
+  
+  /* textbox styles */
+  .text-field {
+      background-color: #dfded4;
+      border: 1px solid #313b5b;
+      border-radius: 1.5rem;
+      cursor: pointer;
+      filter: drop-shadow(1px 4px 3px rgba(0, 0, 0, 0.5));
+      font-size: 20px;
+      margin-bottom: .5rem;
+      padding: .5rem;
+      width: 24rem;
+  }
+}
+
+/* Large Tablet and Desktop */
+@media screen and (min-width: 900px) {
+  /* content container styling and positioning */
+  .content {
+      align-items: center;
+      display: flex;
+      height: 441px;
+      justify-content: space-between;
+      margin-top: 168px;
+  }
+
+  /* content container styling and positioning */
+  .details-container {
+      align-items: center;
+      display: flex;
+      height:100%;
+      margin: auto 0;
+      margin-right: .5rem;
+  }
+
+  /* footer styling */
+  footer {
+      bottom: 0;
+      position: fixed;
+      width: 100%;
+      z-index: 99;
+  }
+
+  /* form container styles */
+  .form-container {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      height: 450px;
+      width: 100%;
+      margin-top: 200px;
+  }
+
+  /* posistioning for form elements */
+  .form-group {
+      margin-bottom: .2rem;
+      text-align: left;
+  }
+
+  /* content container styling and positioning */
+  .form-group-container {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      padding-bottom: 1rem;
+  }
+
+  /* content header */
+  h1 {
+      filter: drop-shadow(1px 4px 3px rgba(0, 0, 0, 0.5));
+      font-size: 26px;
+      margin-bottom: .5rem;
+      text-align: center;
+  }
+
+  /* form label styles */
+  label {
+      color:#26282f;
+      display: block;  
+      filter: drop-shadow(1px 4px 3px rgba(0, 0, 0, 0.5));
+      font-size: 18px;
+      font-weight: bold;
+      margin-left: 1rem;
+      margin-top: .5rem;
+  }
+
+  /* content container styling and positioning */
+  .waitlist-container {
+      align-items: center;
+      background-color: #85a9cfaa;
+      border: 1px solid #313b5b;
+      border-radius: 1.5rem;
+      display: flex;
+      filter: drop-shadow(1px 4px 3px rgba(0, 0, 0, 0.5));
+      height: 370px;
+      justify-content: center;
+      margin: 3rem auto;
+      padding-bottom: 2rem;
+      text-align: left;
+      top: 120px;
+      width: 830px;
+      z-index: 98;
+  } 
+
+  /* styling for the waitlist-details */
+  #waitlist-details {    
+      background-color: #85a9cf;
+      border: 1px solid #26282f;
+      border-radius: 1.5rem;
+      filter: drop-shadow(1px 4px 3px rgba(0, 0, 0, 0.5));
+      font-size: 18px;
+      margin: 2rem 2rem .5rem 3rem;
+      padding: .5rem;
+      text-align: center;
+      width: 330px;
+  }
+
+  /* styling for the imported form details */
+  #waitlist-details > * {
+      margin-right: 20px;
+  }
+
+  /* waitlist lookup form */
+  #waitlist-form {
+      align-items: center;
+      display: flex;
+      text-align: center;
+      width: 90%;  
+  }
+
+  .waitlist-group {
+      display: flex;
+      flex-direction: row;
+  }
+
+  /* button styles */
+  .submit-button {
+      background-color: #313b5b;
+      border: none;
+      border-radius: 1.5rem;
+      color: #dfded4;
+      cursor: pointer;
+      filter: drop-shadow(1px 4px 3px rgba(0, 0, 0, 0.5));
+      font-size: 26px;
+      height: 2.6rem;
+      margin-top: 1rem;
+      width: 25rem;
+  }
+
+  /* button hover styles */    
+  .submit-button:hover {
+      background-color: #5d8c98;
+      border: 1px solid #313b5b;
+      color:#26282f;  
+  }    
+  
+  /* textbox styles */
+  .text-field {
+      background-color: #dfded4;
+      border: 1px solid #313b5b;
+      border-radius: 1.5rem;
+      cursor: pointer;
+      filter: drop-shadow(1px 4px 3px rgba(0, 0, 0, 0.5));
+      font-size: 20px;
+      margin-bottom: .5rem;
+      padding: .5rem;
+      width: 24rem;
+  }
+}
+/* end page content styling */

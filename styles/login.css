@@ -1,0 +1,128 @@
+/* 
+    CSD-460
+    Team Indigo
+    Moffat Bay Marina
+    
+    Team Members
+        Sam Crandall
+        Jacob Ives
+        Jeff Pedersen
+        Micah Smith 
+
+    Contributors to this Code
+        Jeff Pedersen (last update on 9-11-2023)
+*/
+
+/* login page content styling */
+
+/* link styling */
+a {
+    color: #014a7b;
+    text-decoration: none;   
+}
+
+/* link hover styling */
+a:hover {
+   color: #ff7700d0;
+}
+
+/* footer positioning */
+footer {
+   bottom: 0;
+   position: fixed;   
+   width: 100%;
+   z-index: 99;
+}
+
+/* form elements positioning */
+.form-group {
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+/* form label styling */
+label {
+    color:#26282f;
+    display: block;
+    filter: drop-shadow(1px 4px 3px rgba(0, 0, 0, 0.5));
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 1rem;   
+}
+
+/* page container styling sizing and positioning */
+.login-container {
+    border: 1px solid #313b5b;
+    background-color: #85a9cfaa;
+    border-radius: 1.5rem;   
+    filter: drop-shadow(1px 4px 3px rgba(0, 0, 0, 0.5));
+    height: 360px;
+    margin: 3rem auto;
+    padding-left: 2.7rem;
+    padding-bottom: 2rem;
+    position: absolute;
+    right: 50%;
+    text-align: center;
+    top: 150px;
+    transform: translate(50%, 0);
+    width: 300px;
+    z-index: 99;
+}
+
+/* content header */
+.login-container h1 {
+    filter: drop-shadow(1px 4px 3px rgba(0, 0, 0, 0.5));
+    font-size: 32px;
+    margin-bottom: 2rem;
+    margin-right: 1.5rem;    
+}
+
+/* page paragraph styles */
+p {
+    color: #26282f;
+    filter: drop-shadow(1px 4px 3px rgba(0, 0, 0, 0.5));
+    margin-bottom: 1.5rem;
+    margin-right: 2.5rem;
+    margin-top: .2rem; 
+}
+
+/* submit button styles */
+.submit-button {
+    background-color: #313b5b;
+    border: none;
+    border-radius: 1.5rem;
+    color: #dfded4;
+    cursor: pointer;
+    filter: drop-shadow(1px 4px 3px rgba(0, 0, 0, 0.5));
+    font-size: 26px;
+    height: 3rem;
+    margin-right: 2.5rem; 
+    width: 12rem;
+}
+
+/* submit button hover styles */
+.submit-button:hover {
+    background-color: #5d8c98;
+    border: 1px solid #313b5b;
+    color:#26282f;   
+}
+
+/* textbox styles */
+.text-field {
+    background-color: #dfded4;
+    border: 1px solid #313b5b;
+    border-radius: 1.5rem;
+    cursor: pointer;
+    filter: drop-shadow(1px 4px 3px rgba(0, 0, 0, 0.5));
+    font-size: 20px;
+    padding: 0.5rem;
+    width: 80%;
+}
+
+/* hides the breadcrumb on mobile and small tablets */
+@media screen and (min-width: 360px) and (max-width: 1000px) {
+    .breadcrumb {
+        display: none;
+      }
+}
+/* end login page content styling */

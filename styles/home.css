@@ -1,0 +1,520 @@
+/* 
+    CSD-460
+    Team Indigo
+    Moffat Bay Marina
+    
+    Team Members
+        Sam Crandall
+        Jacob Ives
+        Jeff Pedersen
+        Micah Smith 
+
+    Contributors to this Code
+        Jeff Pedersen (last update on 9-12-2023)
+*/
+
+/* home page content styling */
+
+
+/* Mobile */
+@media screen and (min-width: 360px) and (max-width: 600px) {
+    /* container used to help position the buttons */
+    .button-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 1.5rem;
+        padding: .5rem;    
+    }
+
+    /* hides the large overlay used on desktop */
+    .content-overlay {
+        display: none;
+    }
+
+    /* styling and positioning for the overlay */
+    .content-small {
+        align-items: center;
+        background-color: #dfded4;
+        display: flex;
+        filter: drop-shadow(1px 4px 3px rgba(0, 0, 0, 0.5));
+        flex-direction: column;
+        justify-content: space-between;
+        max-height: 720px;
+        min-width: 100%;
+        min-height: 720px;
+        position: absolute;
+        right: 50%;
+        top:670px;       
+        transform: translate(50%, 0);       
+        z-index: 99;    
+    }
+
+    /* styling and positioning for the fish image */
+    .fish-image {
+        background-image: url('../images/fish.png');
+        background-size: 100% 100%;
+        filter: drop-shadow(1px 4px 3px rgba(0, 0, 0, 0.5));
+        height: 100px;
+        left: 0; 
+        margin-top: 12px;
+        opacity: 0.5;
+        position: absolute;
+        top: 0;
+        width: 100px;
+    }
+
+    /* footer styles */
+    footer {   
+        clear: both;
+        margin-bottom: -30px;
+        margin-top: 842px;
+        position: relative;
+        width: 100%;
+        z-index: 99;
+    }
+
+    /* positioning and styling for the hero image */
+    #hero {
+        height: calc(100vh - 140px);
+        overflow: hidden;
+        position: relative;
+        top: 140px;
+        z-index: 96;
+    }
+    
+    /* positioning and styling for the hero image */
+    #hero-image {      
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;        
+        width: auto;      
+    }
+
+    /* styling for the buttons */
+    .overlay-button {
+        background-color: #313b5b;
+        border: none;
+        border-radius: 1.5rem;
+        color: #dfded4;
+        cursor: pointer;
+        filter: drop-shadow(1px 4px 3px rgba(0, 0, 0, 0.5));
+        font-size: 26px;
+        height: 3rem;
+        margin-right: 1rem;
+        margin-left: 1rem;
+        margin-top: 2rem; 
+        width: 18rem;
+    }
+  
+    /* overlay button hover styles */
+    .overlay-button:hover {
+        background-color: #5d8c98;
+        border: 1px solid #313b5b;
+        color:#26282f;   
+    }
+    
+    /* text container positioning */
+    .text-container {
+        flex-grow: 1;
+        padding: .5rem;
+        text-align: right;
+    }
+
+    /* styling for the map image */
+    .text-container img {
+        border-radius: .75rem;
+        filter: drop-shadow(1px 4px 3px rgba(0, 0, 0, 0.5));
+        height: auto;       
+        margin: 1rem 2rem;        
+        width: 290px;
+    }  
+
+    /* styling for the page text */
+    .text-container p {
+        filter: drop-shadow(1px 4px 3px rgba(0, 0, 0, 0.5));
+        font-size: 16px;
+        font-weight: bolder;
+        margin-bottom: 1.5rem;
+        margin-left: auto;
+        margin-right: auto; 
+        text-align: center;
+    }
+} /* end Mobile */
+
+ /* Tablet (Mobile Logo) */
+@media screen and (min-width: 600px) and (max-width: 1000px) {
+    /* container used to help position the buttons */
+    .button-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 1rem;
+    }
+
+    /* hides the large overlay used on desktop */
+    .content-overlay {
+        display: none;
+    }
+
+    /* styling and positioning for the overlay */
+    .content-small {
+        align-items: center;
+        background-color: #dfded4;
+        display: flex;
+        filter: drop-shadow(1px 4px 3px rgba(0, 0, 0, 0.5));       
+        flex-direction: column;
+        justify-content: space-between;
+        max-height: 900px;
+        min-width: 100%;
+        min-height: 900px;
+        position: absolute;
+        right: 50%;
+        top:675px;
+        transform: translate(50%, 0);
+        z-index: 99;    
+    }
+ 
+    /* styling and positioning for the fish image */
+    .fish-image {
+        background-image: url('../images/fish.png');
+        background-size: 100% 100%; 
+        filter: drop-shadow(1px 4px 3px rgba(0, 0, 0, 0.5));
+        height: 150px;
+        left: 0;
+        margin-top: 65px;
+        opacity: 0.5;
+        position: absolute;
+        top: 0;
+        width: 150px;
+    }
+
+    /* footer styles */
+    footer {
+        clear: both;
+        margin-bottom: -30px;
+        margin-top: 1012px;
+        position: relative;        
+        z-index: 99;
+    }
+
+    /* positioning and styling for the hero image */
+    #hero {
+        height: calc(100vh - 140px);
+        overflow: hidden;
+        position: relative;
+        top: 140px;
+        z-index: 96;
+    }
+    
+    /* positioning and styling for the hero image */
+    #hero-image {       
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: auto;
+    }
+
+    /* styling for the buttons */
+    .overlay-button {
+        background-color: #313b5b;
+        border: none;
+        border-radius: 1.5rem;
+        color: #dfded4;
+        cursor: pointer;
+        filter: drop-shadow(1px 4px 3px rgba(0, 0, 0, 0.5));
+        font-size: 26px;
+        height: 3rem;
+        margin-right: 1rem;
+        margin-left: 1rem;
+        margin-top: 2rem; 
+        width: 18rem;
+    }
+  
+    /* overlay button hover styles */
+    .overlay-button:hover {
+        background-color: #5d8c98;
+        border: 1px solid #313b5b;
+        color:#26282f;   
+    }
+
+    /* text container positioning */
+    .text-container {
+        flex-grow: 1;
+        padding: 1rem;
+        text-align: right;
+    }
+
+    /* styling for the map image */
+    .text-container img {
+        border-radius: .75rem;
+        filter: drop-shadow(1px 4px 3px rgba(0, 0, 0, 0.5));
+        height: auto;
+        margin: 1.5rem 5rem;
+        width: 400px;
+    }  
+
+    /* styling for the page text */
+    .text-container p {       
+        filter: drop-shadow(1px 4px 3px rgba(0, 0, 0, 0.5));
+        font-size: 16px;
+        font-weight: bolder;
+        margin-bottom: 1.5rem;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;       
+    }
+} /* end Tablet (Mobile Logo) */
+
+/* Tablet (Desktop Logo) */
+@media screen and (min-width: 1000px) and (max-width: 1280px) {    
+    /* container used to help position the buttons */
+    .button-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 1rem;
+        margin-left: auto;
+        margin-right: 1rem;
+    }
+    
+    /* hides the large overlay used on desktop */
+    .content-overlay {
+        display: none;
+    }
+
+    /* styling and positioning for the overlay */
+    .content-small {
+        align-items: center;
+        background-color: #dfded4;
+        display: flex;
+        filter: drop-shadow(1px 4px 3px rgba(0, 0, 0, 0.5));
+        flex-direction: row;
+        justify-content: space-between;        
+        max-height: 510px;
+        max-width: 100%;
+        min-height: 510px;
+        min-width: 100%;
+        position: absolute;        
+        right: 50%;
+        top: 675px;
+        transform: translate(50%, 0);
+        z-index: 99;
+    }
+
+    /* styling and positioning for the fish image */
+    .fish-image {
+        background-image: url('../images/fish.png');
+        background-size: 100% 100%;
+        filter: drop-shadow(1px 4px 3px rgba(0, 0, 0, 0.5));
+        height: 100px; 
+        left: 0;
+        margin-top: 15px;
+        opacity: 0.5;
+        position: absolute;
+        top: 0;
+        width: 100px;
+    }
+
+    /* footer styles */
+    footer {
+        clear: both;
+        margin-bottom: -30px;
+        margin-top: 610px;
+        position: relative;
+        z-index: 99;
+    }
+
+    /* positioning and styling for the hero image */
+    #hero {
+        height: calc(100vh - 140px);
+        overflow: hidden;
+        position: relative;
+        top: 140px;
+        z-index: 96;
+    }
+    
+    /* positioning and styling for the hero image */
+    #hero-image {
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;      
+      width: auto;
+    }
+    
+    /* styling for the buttons */
+    .overlay-button {
+        background-color: #313b5b;
+        border: none;
+        border-radius: 1.5rem;
+        color: #dfded4;
+        cursor: pointer;
+        filter: drop-shadow(1px 4px 3px rgba(0, 0, 0, 0.5));
+        font-size: 26px;
+        height: 3rem;
+        margin-right: 1rem;
+        margin-left: 1rem;
+        margin-top: 2rem; 
+        width: 18rem;
+    }
+  
+    /* overlay button hover styles */
+    .overlay-button:hover {
+        background-color: #5d8c98;
+        border: 1px solid #313b5b;
+        color:#26282f;   
+    }
+
+    /* text container positioning */
+    .text-container {        
+        margin-left: 1rem;
+        margin-right: auto;
+        padding: 1rem;
+        text-align: right;        
+        width: 500px;
+    }
+
+    /* styling for the map image */
+    .text-container img {
+        border-radius: .75rem;
+        filter: drop-shadow(1px 4px 3px rgba(0, 0, 0, 0.5));
+        height: auto;
+        margin-right: 2rem;       
+        width: 400px;
+    } 
+
+    /* styling for the page text */
+    .text-container p {
+        filter: drop-shadow(1px 4px 3px rgba(0, 0, 0, 0.5));
+        font-size: 16px;
+        font-weight: bolder;
+        margin-bottom: 1rem;        
+        text-align: center;
+    }  
+} /* end Tablet (Desktop Logo) */
+
+/* Desktop */
+@media screen and (min-width: 1280px) {
+    /* container used to help position the buttons */
+    .button-container {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+    }
+    
+    /* hides the small overlay used on mobile and tablet screens */
+    .content-small {
+        display: none;
+    }
+
+    /* styling and positioning for the overlay */
+    .content-overlay {
+        align-items: center;
+        background-color: #85a9cfaa;
+        border-radius: 2rem;
+        display: flex;
+        filter: drop-shadow(1px 4px 3px rgba(0, 0, 0, 0.5));
+        flex-direction: row;
+        height: 400px;
+        justify-content: space-between;
+        position: absolute;
+        right: 160px;
+        top: 51%;        
+        transform: translate(0%, -50%);
+        width: 700px;        
+        z-index: 98;       
+    }
+
+    /* styling and positioning for the fish image */
+    .fish-image {
+        background-image: url('../images/fish.png');
+        background-size: 100% 100%; 
+        filter: drop-shadow(1px 4px 3px rgba(0, 0, 0, 0.5));
+        height: 80px;
+        left: 0;
+        margin-left: 314px;
+        margin-top: 15px;
+        opacity: 0.5;
+        position: absolute;
+        top: 0;
+        width: 80px;
+    }
+
+    /* footer styles */
+    footer {
+        bottom: 0;
+        position: fixed;      
+        width: 100%;
+        z-index: 99;
+    }
+
+    /* positioning and styling for the hero image */
+    #hero {
+        height: calc(100vh - 140px);
+        overflow: hidden;
+        position: relative;
+        top: 100px;
+        z-index: 96;
+    }
+
+    /* positioning and styling for the hero image */
+    #hero-image {    
+        height: 100%; 
+        left: 0;
+        position: absolute;
+        top: 0;   
+        width: auto;
+    }
+
+    /* styling for the buttons */
+    .overlay-button {
+        background-color: #313b5b;
+        border: none;
+        border-radius: 1.5rem;
+        color: #dfded4;
+        cursor: pointer;
+        filter: drop-shadow(1px 4px 3px rgba(0, 0, 0, 0.5));
+        font-size: 26px;
+        height: 3rem;
+        margin-right: 1rem;
+        margin-left: 1rem;
+        margin-top: 2rem; 
+        width: 18rem;
+    }
+
+    /* overlay button hover styles */
+    .overlay-button:hover {
+        background-color: #5d8c98;
+        border: 1px solid #313b5b;
+        color:#26282f;   
+    }
+    
+    /* text container positioning */
+    .text-container {
+        flex-grow: 1;
+        padding: 1rem;
+        text-align: right;
+    }
+
+    /* styling for the map image */
+    .text-container img {
+        border-radius: .75rem;
+        filter: drop-shadow(1px 4px 3px rgba(0, 0, 0, 0.5));
+        height: auto;       
+        margin-right: 2rem;       
+        width: 300px;
+    } 
+
+    /* styling for the page text */
+    .text-container p {
+        filter: drop-shadow(1px 4px 3px rgba(0, 0, 0, 0.5));
+        font-size: 16px;
+        font-weight: bolder;
+        margin-bottom: 1rem;
+        margin-right: 2rem;       
+        text-align: center;        
+    }
+} /* end Desktop */

@@ -1,0 +1,671 @@
+/* 
+    CSD-460
+    Team Indigo
+    Moffat Bay Marina
+    
+    Team Members
+        Sam Crandall
+        Jacob Ives
+        Jeff Pedersen
+        Micah Smith 
+
+    Contributors to this Code
+        Jeff Pedersen (last update on 9-12-2023)
+*/
+
+/* lookup page content styling */
+
+/* hides the breadcrumb on mobile and small tablets */
+@media screen and (min-width: 360px) and (max-width: 1000px) {
+    .breadcrumb {
+        display: none;
+    }
+}
+
+/* Mobile */
+@media screen and (min-width: 360px) and (max-width: 600px) {
+   /* container for styling and positioning */
+   .content {
+        align-items: center;
+        display: flex;
+        flex-direction: column-reverse;
+        height: 1180px;
+        justify-content: space-between;
+        margin-top: 160px; 
+    }
+
+    /* image */
+    .content img {
+        height: auto;
+        margin-left: -150px;
+        width: 780px;
+    }
+
+    /* container for styling and positioning */
+    .details-container {
+        align-items: center;
+        height: auto;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+        width: 420px;
+    }
+
+    /* form container styles */
+    .form-container {
+        display: flex;
+        flex-direction: column;
+        height: 580px;
+        margin-top: 1.5rem;
+        width: 100%;
+    }
+
+    /* posistioning for form elements */
+    .form-group {
+        margin-bottom: .2rem;
+        text-align: left;
+    } 
+
+    /* container for styling and positioning */
+    .form-group-container {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 1rem;
+    }
+
+    /* content header */
+    h1 {
+        filter: drop-shadow(1px 4px 3px rgba(0, 0, 0, 0.5));
+        font-size: 26px;
+        margin-bottom: .5rem;
+        text-align: center;
+    }
+
+    /* form label styles */
+    label {
+        color:#26282f;
+        display: block;  
+        filter: drop-shadow(1px 4px 3px rgba(0, 0, 0, 0.5));
+        font-size: 18px;
+        font-weight: bold;
+        margin-left: 1rem;
+        margin-top: .5rem;
+    }
+
+    /* content container styling and positioning */
+    .lookup-container {
+        background-color: #85a9cfaa;
+        border: 1px solid #313b5b;
+        border-radius: 1.5rem;
+        display: flex;
+        flex-direction: column-reverse;
+        filter: drop-shadow(1px 4px 3px rgba(0, 0, 0, 0.5));
+        height: 620px;
+        justify-content: center;
+        margin: 2rem auto;
+        padding-bottom: 2rem;
+        text-align: left;
+        top: 120px;
+        width: 420px;
+        z-index: 98;
+    } 
+
+    /* image frame */
+    .marina-image-container {
+        border-radius: .75rem;
+        display: block;
+        filter: drop-shadow(1px 4px 3px rgba(0, 0, 0, 0.5));
+        height: 440px;
+        margin: 1rem auto;
+        overflow: hidden;
+        width: 420px;   
+    }
+
+    /* styling for the reservation-details */
+    #reservation-details {      
+        background-color: #85a9cf;
+        border: 1px solid #26282f;
+        border-radius: 1.5rem;
+        filter: drop-shadow(1px 4px 3px rgba(0, 0, 0, 0.5));
+        font-size: 18px;
+        margin: 1rem;
+        padding-bottom: 2rem;
+        text-align: center;
+    }
+
+    /* styling for the imported form details */
+    #reservation-details > * {
+        display: block;
+
+    }
+
+    /* reservation lookup form */
+    #reservation-form {
+        text-align: center;
+        width: 100%;
+    }
+
+    /* button styles */
+    .submit-button {
+        background-color: #313b5b;
+        border: none;
+        border-radius: 1.5rem;
+        color: #dfded4;
+        cursor: pointer;
+        filter: drop-shadow(1px 4px 3px rgba(0, 0, 0, 0.5));
+        font-size: 26px;
+        height: 2.6rem;
+        margin-top: 1rem;
+        width: 25rem;
+    }
+
+    /* button hover styles */    
+    .submit-button:hover {
+        background-color: #5d8c98;
+        border: 1px solid #313b5b;
+        color:#26282f;  
+    }    
+    
+    /* textbox styles */
+    .text-field {
+        background-color: #dfded4;
+        border: 1px solid #313b5b;
+        border-radius: 1.5rem;
+        cursor: pointer;
+        filter: drop-shadow(1px 4px 3px rgba(0, 0, 0, 0.5));
+        font-size: 20px;
+        margin-bottom: .5rem;
+        padding: .5rem;
+        width: 24rem;
+    }
+}
+
+ /* Tablet (Mobile Logo) */
+ @media screen and (min-width: 600px) and (max-width: 900px) {
+    /* container for styling and positioning */
+    .content {
+        align-items: center;
+        display: flex;
+        flex-direction: column-reverse;
+        height: 1230px;
+        justify-content: space-between;
+        margin-top: 160px;
+    }
+
+    /* image */
+    .content img {
+        height: auto;
+        margin-left: -183px;
+        width: 1006px;
+    }
+
+    /* container for styling and positioning */
+    .details-container {
+        align-items: center;
+        height: auto;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+        width: 580px;
+    }
+
+    /* form container styles */
+    .form-container {
+        display: flex;
+        flex-direction: column;
+        height: 580px;
+        margin-top: 1.5rem;
+        width: 100%; 
+    }
+
+    /* posistioning for form elements */
+    .form-group {
+        margin-bottom: .2rem;
+        text-align: left;
+    }
+    
+    /* container for styling and positioning */
+    .form-group-container {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 1rem;
+    }
+
+    /* content header */
+    h1 {
+        filter: drop-shadow(1px 4px 3px rgba(0, 0, 0, 0.5));
+        font-size: 26px;
+        margin-bottom: .5rem;
+        text-align: center;
+    }
+
+    /* form label styles */
+    label {
+        color:#26282f;
+        display: block;  
+        filter: drop-shadow(1px 4px 3px rgba(0, 0, 0, 0.5));
+        font-size: 18px;
+        font-weight: bold;
+        margin-left: 1rem;
+        margin-top: .5rem;
+    }
+
+    /* content container styling and positioning */
+    .lookup-container {
+        background-color: #85a9cfaa;
+        border: 1px solid #313b5b;
+        border-radius: 1.5rem;
+        display: flex;
+        flex-direction: column-reverse;
+        filter: drop-shadow(1px 4px 3px rgba(0, 0, 0, 0.5));
+        height: 560px;
+        justify-content: center;
+        margin: 2rem auto;
+        padding-bottom: 2rem;
+        text-align: left;
+        top: 120px;
+        width: 580px;
+        z-index: 98;
+    } 
+
+    /* image frame */
+    .marina-image-container {
+        border-radius: .75rem;
+        display: block;
+        filter: drop-shadow(1px 4px 3px rgba(0, 0, 0, 0.5));
+        height: 540px;
+        margin: 1rem auto;
+        overflow: hidden;
+        width: 580px;   
+    }
+
+    /* styling for the reservation-details */
+    #reservation-details {      
+        background-color: #85a9cf;
+        border: 1px solid #26282f;
+        border-radius: 1.5rem;
+        filter: drop-shadow(1px 4px 3px rgba(0, 0, 0, 0.5));
+        font-size: 18px;
+        margin: 1rem;
+        padding-bottom: 2rem;
+        text-align: center;
+    }    
+        
+    /* styling for the imported form details */
+    #reservation-details > * {
+        display: block;
+    }
+
+    /* reservation lookup form */
+    #reservation-form {
+        text-align: center;
+        width: 100%;
+    }
+
+    /* button styles */
+    .submit-button {
+        background-color: #313b5b;
+        border: none;
+        border-radius: 1.5rem;
+        color: #dfded4;
+        cursor: pointer;
+        filter: drop-shadow(1px 4px 3px rgba(0, 0, 0, 0.5));
+        font-size: 26px;
+        height: 2.6rem;
+        margin-top: 1rem;
+        width: 25rem;
+    }
+
+    /* button hover styles */    
+    .submit-button:hover {
+        background-color: #5d8c98;
+        border: 1px solid #313b5b;
+        color:#26282f;  
+    }    
+    
+    /* textbox styles */
+    .text-field {
+        background-color: #dfded4;
+        border: 1px solid #313b5b;
+        border-radius: 1.5rem;
+        cursor: pointer;
+        filter: drop-shadow(1px 4px 3px rgba(0, 0, 0, 0.5));
+        font-size: 20px;
+        margin-bottom: .5rem;
+        padding: .5rem;
+        width: 24rem;
+    }
+}
+/* Large Tablet */
+@media screen and (min-width: 900px) and (max-width: 1279px) {
+    /* container for styling and positioning */
+    .content {
+        align-items: center;
+        display: flex;
+        flex-direction: column-reverse;
+        height: 1050px;
+        justify-content: space-between;
+        margin-top: 160px;
+    }
+
+    /* image */
+    .content img {
+        height: auto;
+        margin-left: -117px;
+        width: 1002px;
+    }
+
+    /* container for styling and positioning */
+    .details-container {
+        align-items: center;
+        height:100%;
+        margin-bottom: 1rem;
+    }
+
+    /* form container styles */
+    .form-container {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        height: 450px;
+        width: 100%;
+    }
+
+    /* posistioning for form elements */
+    .form-group {
+        margin-bottom: .2rem;
+        text-align: left;
+    }
+    
+    /* container for styling and positioning */
+    .form-group-container {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 5rem;
+    }
+
+    /* content header */
+    h1 {
+        filter: drop-shadow(1px 4px 3px rgba(0, 0, 0, 0.5));
+        font-size: 26px;
+        margin-bottom: .5rem;
+        text-align: center;
+    }
+
+    /* form label styles */
+    label {
+        color:#26282f;
+        display: block;  
+        filter: drop-shadow(1px 4px 3px rgba(0, 0, 0, 0.5));
+        font-size: 18px;
+        font-weight: bold;
+        margin-left: 1rem;
+        margin-top: .5rem;
+    }
+
+    /* content container styling and positioning */
+    .lookup-container {
+        background-color: #85a9cfaa;
+        border: 1px solid #313b5b;
+        border-radius: 1.5rem;
+        display: flex;
+        filter: drop-shadow(1px 4px 3px rgba(0, 0, 0, 0.5));
+        height: 370px;
+        justify-content: center;
+        margin: 2rem auto;
+        padding-bottom: 2rem;
+        text-align: left;
+        top: 120px;
+        width: 830px;
+        z-index: 98;
+    } 
+
+    /* image frame */
+    .marina-image-container {
+        border-radius: .75rem;
+        display: block;
+        filter: drop-shadow(1px 4px 3px rgba(0, 0, 0, 0.5));
+        height: 900px;
+        margin-bottom: 3rem;
+        overflow: hidden;
+        width: 830px; 
+    }
+
+    /* styling for the reservation-details */
+    #reservation-details {         
+        background-color: #85a9cf;
+        border: 1px solid #26282f;
+        border-radius: 1.5rem;
+        filter: drop-shadow(1px 4px 3px rgba(0, 0, 0, 0.5));
+        font-size: 18px;
+        margin: 2rem;
+        padding: 2rem;
+        text-align: center;
+    }
+
+    /* styling for the imported form details */
+    #reservation-details > * {
+        display: block;
+        margin-right: 20px;
+    }
+
+    /* reservation lookup form */
+    #reservation-form {
+        text-align: center;
+        width: 100%;  
+    }
+
+    /* button styles */
+    .submit-button {
+        background-color: #313b5b;
+        border: none;
+        border-radius: 1.5rem;
+        color: #dfded4;
+        cursor: pointer;
+        filter: drop-shadow(1px 4px 3px rgba(0, 0, 0, 0.5));
+        font-size: 26px;
+        height: 2.6rem;
+        margin-top: 1rem;
+        width: 25rem;
+    }
+
+    /* button hover styles */    
+    .submit-button:hover {
+        background-color: #5d8c98;
+        border: 1px solid #313b5b;
+        color:#26282f;  
+    }    
+    
+    /* textbox styles */
+    .text-field {
+        background-color: #dfded4;
+        border: 1px solid #313b5b;
+        border-radius: 1.5rem;
+        cursor: pointer;
+        filter: drop-shadow(1px 4px 3px rgba(0, 0, 0, 0.5));
+        font-size: 20px;
+        margin-bottom: .5rem;
+        padding: .5rem;
+        width: 24rem;
+    }
+}
+
+/* Desktop */
+@media screen and (min-width: 1279px) {
+    /* content container styling and positioning */
+    .content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 168px;
+        height: 441px;
+    }
+
+    /* image */
+    .content img {
+        height: 130%;
+        margin-left: -140px;
+        width: auto;
+    }
+
+    /* content container styling and positioning */
+    .details-container {
+        align-items: center;
+        height:100%;
+        margin-bottom: 1rem;
+    }
+
+    /* content container styling and positioning */
+    .lookup-container {
+        background-color: #85a9cfaa;
+        border: 1px solid #313b5b;
+        border-radius: 1.5rem;
+        display: flex;
+        filter: drop-shadow(1px 4px 3px rgba(0, 0, 0, 0.5));
+        height: 370px;
+        justify-content: center;
+        margin: 3rem auto;
+        padding-bottom: 2rem;
+        text-align: left;
+        top: 120px;
+        width: 830px;
+        z-index: 98;
+    } 
+
+    /* footer styling */
+    footer {
+      bottom: 0;
+      position: fixed;
+      width: 100%;
+      z-index: 99;
+  }
+
+    /* form container styles */
+    .form-container {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        height: 450px;
+        width: 100%;
+    }
+
+    /* posistioning for form elements */
+    .form-group {
+        margin-bottom: .2rem;
+        text-align: left;
+    }
+
+    /* content container styling and positioning */
+    .form-group-container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding-bottom: 5rem;
+    }
+
+    /* content header */
+    h1 {
+        filter: drop-shadow(1px 4px 3px rgba(0, 0, 0, 0.5));
+        font-size: 26px;
+        margin-bottom: .5rem;
+        text-align: center;
+    }
+
+    /* form label styles */
+    label {
+        color:#26282f;
+        display: block;  
+        filter: drop-shadow(1px 4px 3px rgba(0, 0, 0, 0.5));
+        font-size: 18px;
+        font-weight: bold;
+        margin-left: 1rem;
+        margin-top: .5rem;
+    }
+
+    /* content container styling and positioning */
+    .lookup-container {
+        background-color: #85a9cfaa;
+        border: 1px solid #313b5b;
+        border-radius: 1.5rem;
+        display: flex;
+        filter: drop-shadow(1px 4px 3px rgba(0, 0, 0, 0.5));
+        height: 370px;
+        justify-content: center;
+        margin: 3rem auto;
+        padding-bottom: 2rem;
+        text-align: left;
+        top: 120px;
+        width: 830px;
+        z-index: 98;
+    } 
+
+    /* image frame */
+    .marina-image-container {
+        border-radius: .75rem;
+        filter: drop-shadow(1px 4px 3px rgba(0, 0, 0, 0.5));
+        height: 400px;
+        margin-left: 20px;
+        overflow: hidden;
+        width: 400px;
+    }
+
+    /* styling for the reservation-details */
+    #reservation-details {        
+        background-color: #85a9cf;
+        border: 1px solid #26282f;
+        border-radius: 1.5rem;
+        filter: drop-shadow(1px 4px 3px rgba(0, 0, 0, 0.5));
+        font-size: 18px;
+        margin: 2rem;
+        padding: 2rem;
+        text-align: center;
+    }
+
+    /* styling for the imported form details */
+    #reservation-details > * {
+        display: block;
+        margin-right: 20px;
+    }
+
+    /* reservation lookup form */
+    #reservation-form {
+        text-align: center;
+        width: 100%;  
+    }
+
+    /* button styles */
+    .submit-button {
+        background-color: #313b5b;
+        border: none;
+        border-radius: 1.5rem;
+        color: #dfded4;
+        cursor: pointer;
+        filter: drop-shadow(1px 4px 3px rgba(0, 0, 0, 0.5));
+        font-size: 26px;
+        height: 2.6rem;
+        margin-top: 1rem;
+        width: 25rem;
+    }
+
+    /* button hover styles */    
+    .submit-button:hover {
+        background-color: #5d8c98;
+        border: 1px solid #313b5b;
+        color:#26282f;  
+    }    
+    
+    /* textbox styles */
+    .text-field {
+        background-color: #dfded4;
+        border: 1px solid #313b5b;
+        border-radius: 1.5rem;
+        cursor: pointer;
+        filter: drop-shadow(1px 4px 3px rgba(0, 0, 0, 0.5));
+        font-size: 20px;
+        margin-bottom: .5rem;
+        padding: .5rem;
+        width: 24rem;
+    }
+}
+/* end page content styling */

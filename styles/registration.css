@@ -1,0 +1,357 @@
+/* 
+    CSD-460
+    Team Indigo
+    Moffat Bay Marina
+    
+    Team Members
+        Sam Crandall
+        Jacob Ives
+        Jeff Pedersen
+        Micah Smith 
+
+    Contributors to this Code
+        Jeff Pedersen (last update on 9-11-2023)
+*/
+
+/* registration page content styling */
+
+.input-wrapper {
+    align-items: center;
+    display: flex;  
+}
+
+/* textbox styling */
+.input-wrapper input { 
+    background-color: #dfded4;
+    border: 1px solid #313b5b;
+    border-radius: 1.5rem;
+    cursor: pointer;
+    filter: drop-shadow(1px 4px 3px rgba(0, 0, 0, 0.5));
+    font-size: 20px;  
+    margin-bottom: .5rem;
+    margin-right: 1rem;
+    padding: .3rem;
+    text-align: center;
+    width: 3rem;
+}
+
+/* boat sizing side note */
+.notice {
+    margin: 0;
+}
+
+/* Mobile and small Tablet */
+@media screen and (min-width: 360px) and (max-width: 1000px) {
+    /* hides the breadcrumbs on mobile and small tablets */
+    .breadcrumb {
+        display: none;
+    }
+    
+    /* footer styling */
+    footer {
+        bottom: 0;
+        position: fixed;
+        width: 100%;
+        z-index: 99;
+    }
+
+    /* posistioning for form elements */
+    .form-group {
+        margin-bottom: .2rem;
+        text-align: left;
+    } 
+
+    /* content header */
+    h1 {
+        filter: drop-shadow(1px 4px 3px rgba(0, 0, 0, 0.5));
+        font-size: 26px;
+        margin-bottom: .5rem;
+        text-align: center;   
+    }
+
+    /* form label styles */
+    label {
+        color:#26282f;
+        display: block;
+        filter: drop-shadow(1px 4px 3px rgba(0, 0, 0, 0.5));
+        font-size: 18px;
+        font-weight: bold;
+        margin-left: 1rem;
+        margin-top: .5rem;  
+    }
+
+    /* content paragraph styles */
+    p {
+        color: #26282f;
+        filter: drop-shadow(1px 4px 3px rgba(0, 0, 0, 0.5));
+        margin-bottom: 1.5rem;
+        margin-right: 2.5rem;
+        margin-top: .2rem;
+    }
+
+    /* content container styling and positioning */
+    .registration-container {
+        background-color: #85a9cfaa;
+        border: 1px solid #313b5b;
+        border-radius: 1.5rem;
+        display: flex;
+        filter: drop-shadow(1px 4px 3px rgba(0, 0, 0, 0.5));
+        height: 750px;
+        justify-content: center;
+        margin: 3rem auto;
+        padding-bottom: 2rem;
+        position: absolute;
+        text-align: left;
+        top: 120px;
+        width: 100%;
+        z-index: 98;
+    }
+
+    /* positioning for the "required" text */
+    #require {
+        margin-right: 4rem;
+        text-align: right;    
+    }
+    
+    /* styling to the required field indicators */
+    .required {
+        color: red;
+    }
+
+    /* sizing for the text area */
+    .resize-area {
+        height: 3rem;
+        overflow: auto;
+        resize: none;  
+    }
+
+    /* styling for the select box */
+    select {
+        height: 2rem;
+        margin-left: 1rem;
+        width: 5rem;
+    }
+
+    /* submit button styles */
+    .submit-button {     
+        background-color: #313b5b;
+        border: none;
+        border-radius: 1.5rem;
+        color: #dfded4;      
+        cursor: pointer;
+        filter: drop-shadow(1px 4px 3px rgba(0, 0, 0, 0.5));
+        font-size: 26px;
+        height: 2.5rem;
+        margin-top:.5rem;       
+        width: 25rem;
+    }
+    
+    /* submit button hover styles */
+    .submit-button:hover {
+        background-color: #5d8c98;
+        border: 1px solid #313b5b;
+        color:#26282f;
+    }
+    
+    /* positioning for the sub columns */
+    .sub-row {
+        display: flex;
+        flex-direction: row;
+        gap: .5rem;
+    }
+
+    /* textbox styles */
+    .text-field {
+        background-color: #dfded4;
+        border: 1px solid #313b5b;
+        border-radius: 1.5rem;
+        cursor: pointer;
+        filter: drop-shadow(1px 4px 3px rgba(0, 0, 0, 0.5));
+        font-size: 20px;
+        margin-bottom: .5rem;
+        padding: .5rem;
+        width: 180px;
+    }
+  
+    /* extended length textbox styles */
+    .text-field-xtend {
+        background-color: #dfded4;
+        border: 1px solid #313b5b;
+        border-radius: 1.5rem;
+        cursor: pointer;
+        filter: drop-shadow(1px 4px 3px rgba(0, 0, 0, 0.5));
+        font-size: 20px;
+        margin-bottom: .5rem;
+        padding: .5rem;
+        width: 385px;
+    }
+} /* end Mobile and small Tablet */
+
+/* Large Tablet and Desktop */
+@media screen and (min-width: 1001px) {
+    /* footer styling */
+    footer {
+        bottom: 0;
+        position: fixed;
+        width: 100%;
+        z-index: 99;
+    }
+
+    /* posistioning for form elements */
+    .form-column {
+        flex: 1;
+        margin-right: 2rem;
+    }
+
+    /* posistioning for form elements */
+    .form-columns {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    /* posistioning for form elements */
+    .form-group {
+        margin-bottom: .2rem;
+        text-align: left;
+    }
+    
+    /* content header */
+    h1 {
+        filter: drop-shadow(1px 4px 3px rgba(0, 0, 0, 0.5));
+        font-size: 26px;
+        margin-bottom: .5rem;
+        margin-right: 4.5rem;
+        text-align: center;  
+    }
+      
+    /* form label styles */
+    label {
+        display: block;
+        color:#26282f;
+        filter: drop-shadow(1px 4px 3px rgba(0, 0, 0, 0.5));
+        font-size: 18px;
+        font-weight: bold;
+        margin-top: .5rem;
+        margin-left: 1rem; 
+    }
+
+    /* content paragraph styles */
+    p {
+        color: #26282f;
+        filter: drop-shadow(1px 4px 3px rgba(0, 0, 0, 0.5));
+        margin-bottom: 1.5rem;
+        margin-right: 2.5rem;
+        margin-top: .2rem;
+    }
+
+    /* content container styling and positioning */
+    .registration-container {
+        background-color: #85a9cfaa;
+        border: 1px solid #313b5b;
+        border-radius: 1.5rem;
+        filter: drop-shadow(1px 4px 3px rgba(0, 0, 0, 0.5));
+        height: 360px;
+        margin: 3rem auto;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 2rem;
+        padding-left: 2.7rem;
+        position: absolute;
+        right: 50%;
+        text-align: left;
+        top: 150px;
+        transform: translate(50%, 0);
+        width: 950px;
+        z-index: 98;
+    }
+
+    /* positioning for the "required" text */
+    #require {
+        margin-right: 4rem;
+        text-align: right;  
+    }
+
+    /* styling to the required field indicators */
+    .required {
+        color: red;
+    }
+
+    /* sizing for the text area */
+    .resize-area {
+        height: 3rem;
+        overflow: auto;
+        resize: none;
+    }
+
+    /* styling for the select box */
+    select {
+        height: 2rem;
+        margin-left: 1rem;
+        width: 5rem;
+    }
+   
+    /* submit button styles */
+    .submit-button {
+        background-color: #313b5b;
+        border: none;
+        border-radius: 1.5rem;
+        color: #dfded4;
+        cursor: pointer;
+        filter: drop-shadow(1px 4px 3px rgba(0, 0, 0, 0.5));
+        font-size: 26px;
+        height: 2.5rem;        
+        margin-right: 1.5rem;
+        margin-top:.5rem;        
+        width: 27rem;
+    }
+    
+    /* submit button hover styles */
+    .submit-button:hover {
+        background-color: #5d8c98;
+        border: 1px solid #313b5b;
+        color:#26282f;
+    }
+
+    /* positioning for the sub columns */
+    .sub-row {
+        display: flex;
+        flex-direction: row;
+        gap: .5rem;
+    }
+
+    /* sizing for the text area */
+    textarea {
+        height: 4.1rem;
+    }
+
+    /* textbox styles */
+    .text-field {
+        background-color: #dfded4;
+        border: 1px solid #313b5b;
+        border-radius: 1.5rem;
+        cursor: pointer;
+        filter: drop-shadow(1px 4px 3px rgba(0, 0, 0, 0.5));
+        font-size: 20px;
+        margin-bottom: .5rem;
+        margin-left: auto;
+        margin-right: auto;
+        padding: .5rem;
+        width: 80%;
+    }
+
+    /* extended length textbox styles */
+    .text-field-xtend {
+        background-color: #dfded4;
+        border: 1px solid #313b5b;
+        border-radius: 1.5rem;
+        cursor: pointer;
+        filter: drop-shadow(1px 4px 3px rgba(0, 0, 0, 0.5));
+        font-size: 20px;
+        margin-bottom: .5rem;
+        margin-left: auto;
+        margin-right: auto;
+        padding: .5rem;
+        width: 90%;
+    }
+} /* end Large Tablet and Desktop */
+/* end page content styling */
